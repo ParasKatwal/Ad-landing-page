@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a, a:hover, a:visited, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header {
+  padding: 20px;
+}
+
+header i {
+  padding: 10px;
+}
+
+.timer ul {
+  height: 50px;
+  list-style: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.timer ul li {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px;
+}
+
+.timer ul span {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.timer img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (minmax(2px, auto))[5];
+      grid-template-rows: repeat(5, minmax(2px, auto));
+}
+
+.product .slider-single {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.product .slider-single .slider-single_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product .slider-single .fridge_wrapper img {
+  width: 220px;
+  height: 400px;
+  padding: 30px;
+}
+
+.product .slider-single .tv_wrapper img {
+  width: 400px;
+  height: 300px;
+  padding: 30px;
+}
+
+.product .slider-single .fridge_details {
+  padding: 40px 50px 0 30px;
+  width: 70%;
+  height: auto;
+}
+
+.product .slider-single .fridge_details .table_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (minmax(2px, auto))[2];
+      grid-template-rows: repeat(2, minmax(2px, auto));
+}
+
+.product .slider-single .fridge_details .table_wrapper .table-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.product .slider-single .fridge_details .table_wrapper .table-2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.product .slider-single .fridge_details .table_wrapper td {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.product .slider-single .fridge_details p:last-child {
+  padding-top: 60px;
+}
+
+.product .slider-single .tv_details {
+  width: 70%;
+  padding: 40px 30px 0 30px;
+}
+
+.product .slider-single .tv_details table {
+  width: 100%;
+}
+
+.product .slider-single .tv_details table td {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.product .slider-single .tv_details p:last-child {
+  padding-top: 60px;
+}
+
+.product .slider-single .slick-arrow {
+  position: absolute;
+  padding: 5px 20px;
+  background: rgba(255, 255, 255, 0.3);
+  top: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product .slider-single .slick-arrow span {
+  font-size: 20px;
+}
+
+.product .slider-single .right.slick-arrow {
+  right: 7px;
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+}
+
+.product .slider-single .left.slick-arrow {
+  left: 86%;
+  z-index: 99;
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+}
+
+.product .enquiry {
+  padding-left: 50px;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-column: 6/8;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.product form {
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.product form h6 {
+  padding: 10px;
+  font-weight: lighter;
+}
+
+.product form input[type="text"], .product form input[type="email"], .product form textarea {
+  border: none;
+  font-size: 13px;
+}
+
+.product form input::-webkit-input-placeholder, .product form textarea::-webkit-input-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  color: black;
+}
+
+.product form input:-ms-input-placeholder, .product form textarea:-ms-input-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  color: black;
+}
+
+.product form input::-ms-input-placeholder, .product form textarea::-ms-input-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  color: black;
+}
+
+.product form input::placeholder, .product form textarea::placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  color: black;
+}
+
+.product form input:focus, .product form select:focus, .product form textarea:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none;
+}
+
+.product form button {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 13px;
+  padding: 5px 40px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.product .slider-nav {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+  margin-top: 50px;
+  padding: 0 25px;
+  border-radius: 10px;
+}
+
+.product .slider-nav .item_wrap {
+  padding: 0 10px;
+}
+
+.product .slider-nav .item_fridge {
+  text-align: center;
+  padding: 10px;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.product .slider-nav .item_fridge img {
+  width: 50px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product .slider-nav .item_tv {
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.product .slider-nav .item_tv img {
+  width: 150px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 5px auto;
+}
+
+.product .slider-nav .fridge_price {
+  position: absolute;
+  margin: 10px;
+  right: 10px;
+  top: 30%;
+}
+
+.product .slider-nav h6, .product .slider-nav p {
+  padding: 5px;
+  margin: 0;
+  font-size: 12px;
+}
+
+.product .slider-nav p {
+  background: rgba(255, 255, 255, 0.3);
+  display: inline;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.product .is-active {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.product .slick-arrow {
+  position: absolute;
+  top: 40%;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.product .slick-arrow span {
+  font-size: 25px;
+  margin-top: 4px;
+}
+
+.product .right.slick-arrow {
+  right: 10px;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.product .left.slick-arrow {
+  left: 8px;
+  z-index: 99;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+/*# sourceMappingURL=custom.css.map */

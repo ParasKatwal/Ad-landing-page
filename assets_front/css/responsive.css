@@ -1,0 +1,113 @@
+.product .slider-single .left.slick-arrow{
+    left: 10px !important;
+}
+.product .slider-single .fridge_details .table_wrapper .table-1{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+.product .slider-single .fridge_details .table_wrapper .table-2{
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+.product .slider-single .tv_details{
+    padding: 40px 10px 0 10px;
+}
+
+@media (max-width: 992px){
+    .product .slider-single .left.slick-arrow{
+        left: 78%;
+    }
+    .product .slider-single .fridge_details{
+        width: 100%;
+        padding: 0 50px 20px 50px;
+        height: auto;
+    }
+    .product .slider-single .tv_details{
+        padding: 10px 10px 0 10px;
+        width: auto;
+        margin: 0 auto;
+    }
+    .product .slider-single .slider-single_wrap{
+        flex-direction: column;
+        width: 100%;
+    }
+    .product .slider-single .fridge_wrapper img{
+        width: 300px;
+        height: 600px;
+        margin: 0 auto;
+    }
+    .product .slider-single .tv_wrapper img{
+        margin: 0 auto;
+    }
+    .product .enquiry{
+        width: 100%;
+        padding: 0;
+    }
+    .product form{
+        padding: 30px;
+        height: auto;
+    }
+    .product .container{
+        grid-template-rows: repeat(8, minmax(2px, auto));
+    }
+    .product .slider-single{
+        grid-column: 1/8;
+    }
+    .product .enquiry{
+        padding: 0;
+        grid-row: 7/9;
+        grid-column: 1/8;
+    }
+    .product .slider-nav{
+        grid-row: 4/6;
+        grid-column: 1/8;
+    }
+}
+
+@media (max-width: 767px){
+    .product .slick-arrow span{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 5950px){
+    .product .enquiry{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 450px){
+    .product .slider-nav .item_fridge img{
+        width: 100px;
+        height: 200px;
+    }
+    .product .slider-nav .fridge_price{
+        right: 15%;
+    }
+    .product .slider-single .tv_wrapper img{
+        width: 300px;
+        height: 200px;
+        padding: 0px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 380px){
+    .product .slider-nav .fridge_price{
+        right: 0;
+    }
+}
+
+@media (max-width: 330px){
+    .product .slider-single .fridge_details{
+        padding: 0 30px 20px 30px;
+    }
+    .product .slider-nav .fridge_price{
+        right: 0;
+    }
+    .product .slider-single .tv_wrapper img{
+        width: 250px;
+        height: 150px;
+        padding: 0px;
+        margin-top: 40px;
+    }
+}
